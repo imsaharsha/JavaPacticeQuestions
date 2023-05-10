@@ -7,7 +7,7 @@ public class Trainee {
     private String gender;
     private String course;
 
-    public Trainee(String name, int age, String address,String gender, String course, Double salary, int workingdays) {
+    public Trainee(String name, int age, String address,String gender, String course) {
         this.name = name; // assigning the value of name parameter to name instance
         this.age = age; //reference variable This
         this.address = address;

@@ -3,13 +3,13 @@ package Trainee;
 
 public class TechnicalTrainee extends Trainee {     //Child class inherits attributes from parent class
     private double salary;
-    private int workingDays;
+    private int id;
    
 
-    public TechnicalTrainee(String name, int age, String address, String gender,String course, double salary, int workingDays) {
-        super(name, age, address,gender,course, salary, workingDays);     //super class gives access to parent object
+    public TechnicalTrainee(String name, int age, String address, String gender,String course, double salary, int id) {
+        super(name, age, address,gender,course);     //super class gives access to parent object
         this.salary = salary;
-        this.workingDays = workingDays;  			//reference 
+        this.id = id;  			//reference 
        
     }
 
@@ -18,8 +18,8 @@ public class TechnicalTrainee extends Trainee {     //Child class inherits attri
         return salary; 						
     }
 
-    public int getWorkingDays() {      		//creating method which returns working day
-        return workingDays;
+    public int getId() {      		//creating method which returns working day
+        return id;
     }
     
    

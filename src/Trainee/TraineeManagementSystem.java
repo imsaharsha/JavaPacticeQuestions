@@ -20,10 +20,11 @@ public class TraineeManagementSystem {						//class named TraineeManagementSyate
             System.out.println("Name: " + e.getName() + ", Age: " + e.getAge()+ ", Address: " + e.getAddress()+", Gender: " + e.getGender() + ", Course: " + e.getCourse());
         }
     }
-    public void updateTraineeRecord(Trainee e, String name, int age, String address, String gender, String course) {
-        int index = trainees.indexOf(e);
+    public void updateTraineeRecord(Trainee e, String name, int age, String address, String gender, String course) {   	//updates the record of trainee
+        int index = trainees.indexOf(e); 		
+        //check whether  particular trainee object, represented by the variable e, exists in a list called trainees.	
         if (index != -1) {
-			Trainee updatedTrainee = new Trainee(name, age, address, gender, course,null,index);
+			Trainee updatedTrainee = new Trainee(name, age, address, gender, course);
             trainees.set(index, updatedTrainee);
         }
     }
