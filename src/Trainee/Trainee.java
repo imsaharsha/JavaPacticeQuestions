@@ -5,14 +5,14 @@ public class Trainee {
     private int age;
     private String address;
     private String gender;
-    private String course;
+    private String job;
 
-    public Trainee(String name, int age, String address,String gender, String course) {
+    public Trainee(String name, int age, String address,String gender, String job) {
         this.name = name; // assigning the value of name parameter to name instance
         this.age = age; //reference variable This
         this.address = address;
         this.gender = gender;
-        this.course = course;
+        this.job = job;
     }
 
     public String getName() {    //method creation
@@ -27,8 +27,8 @@ public class Trainee {
         return address;					//returns address
     }
 
-    public String getCourse() {
-        return course;						//returns course		
+    public String getJob() {
+        return job;						//returns course		
     }
 
 	public String getGender() {

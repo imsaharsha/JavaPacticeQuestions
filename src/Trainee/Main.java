@@ -24,10 +24,10 @@ public class Main {
 			for (Trainee e : tms.getTrainees()) {
 			    if (e instanceof AutomationTrainee) {
 			    	AutomationTrainee ftt = (AutomationTrainee) e;
-			        System.out.println("Automation Trainee: Name: " + ftt.getName() + ", Age: " + ftt.getAge() + ", Address: " + ftt.getAddress()+",Gender:"+ftt.getGender()+ ", Course: " + ftt.getCourse() + ", Salary: " + ftt.getSalary() + ", ID: " + ftt.getId());
+			        System.out.println("Automation Trainee: Name: " + ftt.getName() + ", Age: " + ftt.getAge() + ", Address: " + ftt.getAddress()+",Gender:"+ftt.getGender()+ ", Job: " + ftt.getJob() + ", Salary: " + ftt.getSalary() + ", ID: " + ftt.getId());
 			    } else if (e instanceof ManualTrainee) {
 			    	ManualTrainee ptt = (ManualTrainee) e;
-			        System.out.println("Manual Trainee: Name: " + ptt.getName() + ", Age: " + ptt.getAge() + ", Address: " + ptt.getAddress()+",Gender:"+ptt.getGender()+ ", Course: " + ptt.getCourse() + ", Salary: " + ptt.getSalary() + ", ID: " + ptt.getId());
+			        System.out.println("Manual Trainee: Name: " + ptt.getName() + ", Age: " + ptt.getAge() + ", Address: " + ptt.getAddress()+",Gender:"+ptt.getGender()+ ", Job: " + ptt.getJob() + ", Salary: " + ptt.getSalary() + ", ID: " + ptt.getId());
 			    }
 			}
 			System.out.println("Updated Trainee Record");

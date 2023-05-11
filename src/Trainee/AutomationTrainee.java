@@ -6,8 +6,8 @@ public class AutomationTrainee extends Trainee {     //Child class inherits attr
     private int id;
    
 
-    public AutomationTrainee(String name, int age, String address, String gender,String course, double salary, int id) {
-        super(name, age, address,gender,course);     //super class gives access to parent object
+    public AutomationTrainee(String name, int age, String address, String gender,String job, double salary, int id) {
+        super(name, age, address,gender,job);     //super class gives access to parent object
         this.salary = salary;
         this.id = id;  			//reference 
        

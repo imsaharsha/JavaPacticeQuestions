@@ -5,8 +5,8 @@ public class ManualTrainee extends Trainee { 				//child class inherit from pare
 	private int id;
     
     
-	public ManualTrainee(String name, int age, String address,String gender, String course,Double salary, int id) {
-		super(name, age, address,gender,course);    //super class gives access to parent object
+	public ManualTrainee(String name, int age, String address,String gender, String job,Double salary, int id) {
+		super(name, age, address,gender,job);    //super class gives access to parent object
 		
 		this.salary= salary;
 		this.id=id;

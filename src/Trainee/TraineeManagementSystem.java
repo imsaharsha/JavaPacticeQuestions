@@ -17,14 +17,14 @@ public class TraineeManagementSystem {						//class named TraineeManagementSyate
 
     public void viewAllTrainees() {
         for (Trainee e : trainees) {
-            System.out.println("Name: " + e.getName() + ", Age: " + e.getAge()+ ", Address: " + e.getAddress()+", Gender: " + e.getGender() + ", Course: " + e.getCourse());
+            System.out.println("Name: " + e.getName() + ", Age: " + e.getAge()+ ", Address: " + e.getAddress()+", Gender: " + e.getGender() + ", Job: " + e.getJob());
         }
     }
-    public void updateTraineeRecord(Trainee e, String name, int age, String address, String gender, String course) {   	//updates the record of trainee
+    public void updateTraineeRecord(Trainee e, String name, int age, String address, String gender, String job) {   	//updates the record of trainee
         int index = trainees.indexOf(e); 		
         //check whether  particular trainee object, represented by the variable e, exists in a list called trainees.	
         if (index != -1) {
-			Trainee updatedTrainee = new Trainee(name, age, address, gender, course);
+			Trainee updatedTrainee = new Trainee(name, age, address, gender, job);
             trainees.set(index, updatedTrainee);
         }
     }
