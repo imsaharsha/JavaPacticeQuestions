@@ -4,31 +4,30 @@ public class Main {
 
 		public static void main(String[] args) {
 			TraineeManagementSystem tms = new TraineeManagementSystem();
-			TechnicalTrainee ftt1 = new TechnicalTrainee("hari",20,"Baneshwor","Male","Quality Analyst",(double)2000000,5);
+			AutomationTrainee ftt1 = new AutomationTrainee("hari",20,"Baneshwor","Male","Selenium",(double)2000000,5);
 			tms.addTrainee(ftt1);
 			
-			
-			ManagementTrainee ptt1 = new ManagementTrainee("Ram",20,"Dhulikhel","Male","Human Resourses",(double)100000,3);
+			ManualTrainee ptt1 = new ManualTrainee("Ram",20,"Dhulikhel","Male","Android",(double)100000,3);
 			tms.addTrainee(ptt1);
 
-			TechnicalTrainee ftt2 = new TechnicalTrainee("Sita",22,"Kathmandu","Female","Java Developer",(double)300000,6);
+			AutomationTrainee ftt2 = new AutomationTrainee("Sita",22,"Kathmandu","Female","Appium",(double)300000,6);
 			tms.addTrainee(ftt2);
 			//tms.removeTrainee(ftt2);			//using method to remove trainee details
 			
 
-			ManagementTrainee ptt2 = new ManagementTrainee("Gita",22,"Lalitpur","Female","PeopleOperations",(double)150000,4);
+			ManualTrainee ptt2 = new ManualTrainee("Gita",22,"Lalitpur","Female","IOS",(double)150000,4);
 			tms.addTrainee(ptt2);
 			
-			TechnicalTrainee ftt3 = new TechnicalTrainee("radha",22,"Chitwan","female","Flutter",(double)300000,6);
+			AutomationTrainee ftt3 = new AutomationTrainee("radha",22,"Chitwan","female","Jenkins",(double)300000,6);
 			tms.addTrainee(ftt3);
 			
 			for (Trainee e : tms.getTrainees()) {
-			    if (e instanceof TechnicalTrainee) {
-			    	TechnicalTrainee ftt = (TechnicalTrainee) e;
-			        System.out.println("Technical Trainee: Name: " + ftt.getName() + ", Age: " + ftt.getAge() + ", Address: " + ftt.getAddress()+",Gender:"+ftt.getGender()+ ", Course: " + ftt.getCourse() + ", Salary: " + ftt.getSalary() + ", ID: " + ftt.getId());
-			    } else if (e instanceof ManagementTrainee) {
-			    	ManagementTrainee ptt = (ManagementTrainee) e;
-			        System.out.println("Management Trainee: Name: " + ptt.getName() + ", Age: " + ptt.getAge() + ", Address: " + ptt.getAddress()+",Gender:"+ptt.getGender()+ ", Course: " + ptt.getCourse() + ", Salary: " + ptt.getSalary() + ", ID: " + ptt.getId());
+			    if (e instanceof AutomationTrainee) {
+			    	AutomationTrainee ftt = (AutomationTrainee) e;
+			        System.out.println("Automation Trainee: Name: " + ftt.getName() + ", Age: " + ftt.getAge() + ", Address: " + ftt.getAddress()+",Gender:"+ftt.getGender()+ ", Course: " + ftt.getCourse() + ", Salary: " + ftt.getSalary() + ", ID: " + ftt.getId());
+			    } else if (e instanceof ManualTrainee) {
+			    	ManualTrainee ptt = (ManualTrainee) e;
+			        System.out.println("Manual Trainee: Name: " + ptt.getName() + ", Age: " + ptt.getAge() + ", Address: " + ptt.getAddress()+",Gender:"+ptt.getGender()+ ", Course: " + ptt.getCourse() + ", Salary: " + ptt.getSalary() + ", ID: " + ptt.getId());
 			    }
 			}
 			System.out.println("Updated Trainee Record");

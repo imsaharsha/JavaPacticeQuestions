@@ -1,11 +1,11 @@
 package Trainee;
 
-public class ManagementTrainee extends Trainee { 				//child class inherit from parent class
+public class ManualTrainee extends Trainee { 				//child class inherit from parent class
 	private double salary;
 	private int id;
     
     
-	public ManagementTrainee(String name, int age, String address,String gender, String course,Double salary, int id) {
+	public ManualTrainee(String name, int age, String address,String gender, String course,Double salary, int id) {
 		super(name, age, address,gender,course);    //super class gives access to parent object
 		
 		this.salary= salary;
