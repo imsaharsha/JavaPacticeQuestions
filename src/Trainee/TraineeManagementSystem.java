@@ -28,18 +28,7 @@ public class TraineeManagementSystem {						//class named TraineeManagementSyate
             trainees.set(index, updatedTrainee);
         }
     }
-    public ArrayList<Trainee> searchTrainee(String searchString) {
-        ArrayList<Trainee> matchingTrainees = new ArrayList<>();
-        for (Trainee e : trainees) {
-            if (e.getName().contains(searchString) || e.getAddress().contains(searchString) || e.getGender().contains(searchString) || e.getCourse().contains(searchString)) {
-                matchingTrainees.add(e);
-            }
-        }
-        return matchingTrainees;
-    }
-    
-
-    
+      
 }
 
     
